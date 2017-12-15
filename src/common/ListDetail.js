@@ -1,11 +1,9 @@
 import React , {Component} from 'react';
-import { Text , View , TouchableOpacity } from 'react-native';
+import { Text , View , TouchableOpacity , LayoutAnimation } from 'react-native';
 import {observer} from 'mobx-react';
 @observer
 export default class ListDetail extends Component{
-
   render(){
-    console.log(this.props.store.List)
     return(
         <View style={{justifyContent : 'center',alignSelf : 'stretch',alignContent : 'flex-start'}}>
             {this.props.store.List.map((libarary,index)=>{
