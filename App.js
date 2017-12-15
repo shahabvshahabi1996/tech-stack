@@ -1,15 +1,18 @@
 import React , {Component} from 'react';
-import { Text , View } from 'react-native';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { Text , View , ScrollView } from 'react-native';
+import Header from './src/common/Header';
+import List from './src/common/List';
+
 
 export default class App extends Component{
   render(){
     return(
-      <Provider store={createStore}>
-        <View>
+        <View style={{flex : 1}}>
+          <Header>Tech Stack</Header>
+          <ScrollView style={{flex : 1}}>
+            <List/>
+          </ScrollView>
         </View>
-      </Provider>
     );
   }
 }
