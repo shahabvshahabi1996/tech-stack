@@ -10,9 +10,9 @@ export default class ListDetail extends Component{
                 if(this.props.store.index == index)
                     return(
                         <View key={libarary.id}>
-                            <TouchableOpacity onPress={()=>{this.props.store.selectedList(libarary.id)}} style={{borderColor : '#aaa',borderWidth : 1,padding : 15,backgroundColor : '#ddd'}}>
+                            <View style={{borderColor : '#aaa',borderWidth : 1,padding : 15,backgroundColor : '#ddd'}}>
                                 <Text style={{fontSize : 18,fontWeight : '600',color : '#252525'}}>{libarary.title}</Text>
-                            </TouchableOpacity>
+                            </View>
                             <View style={{padding : 15}}>
                                 <Text style={{fontSize : 16}}>{libarary.description}</Text>
                             </View>

@@ -16,9 +16,3 @@ export default class App extends Component{
     );
   }
 }
-
-
-const Styles = {
-
-
-}
